@@ -3,13 +3,16 @@ import argparse
 from pathlib import Path
 import pandas as pd  
 
-def generate_csv(file_dir, csv_path,mode='train'):
+def generate_csv(file_dir, csv_path, mode='train'):
     # 生成file_dir下所有文件的路径
     file_list = []
     for root, dirs, files in os.walk(file_dir):
         for file in files:
             if (file.endswith('.flac') or file.endswith('.wav') or file.endswith('.mp3')) and mode in root:
-                file_list.append(os.path.join(root, file))
+                # 使用 os.path.abspath 生成绝对路径
+                abs_path = os.path.abspath(os.path.join(root, file))
+                file_list.append(abs_path)
+    
     print(f"file length:{len(file_list)}")
     # 生成csv文件
     csv_path = Path(csv_path)
