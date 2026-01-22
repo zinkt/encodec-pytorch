@@ -191,3 +191,6 @@ datasets/LibriSpeech
 datasets/dev-clean.tar.gz
 datasets/test-clean.tar.gz
 datasets/train-clean-100.tar.gz
+
+sensitivity_results/
+demo/selected/

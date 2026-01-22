@@ -7,8 +7,8 @@ common:
   amp: False
 
 datasets:
-  train_csv_path: '/mnt/lustre/sjtu/home/zkn02/train_encodec/datasets/libritts_train100h.csv'
-  test_csv_path: '/mnt/lustre/sjtu/home/zkn02/train_encodec/datasets/LibriTTS_dev-other.csv'
+  train_csv_path: '/home/wjc/encodec-pytorch/datasets/librispeech_train100h.csv'
+  test_csv_path: '/home/wjc/encodec-pytorch/datasets/librispeech_test.csv'
   batch_size: 12
   tensor_cut: 72000
   num_workers: 4
