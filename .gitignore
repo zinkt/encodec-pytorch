@@ -193,4 +193,5 @@ datasets/test-clean.tar.gz
 datasets/train-clean-100.tar.gz
 
 sensitivity_results/
+uep_results/
 demo/selected/
