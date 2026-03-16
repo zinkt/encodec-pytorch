@@ -195,3 +195,5 @@ datasets/train-clean-100.tar.gz
 sensitivity_results/
 uep_results/
 demo/selected/
+demo/audios/*.wav
+!demo/audios/GT.wav
